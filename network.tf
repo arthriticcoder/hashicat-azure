@@ -1,10 +1,6 @@
-provider "azurerm" {
-  features {}
-}
 
-
-resource "azurerm_resource_group" "example" {
-  name     = "${var.prefix}-workshop"
+resource "azurerm_resource_group" "myresourcegroup-network" {
+  name     = "${var.prefix}-workshop-network"
   location = var.location
 }
 
